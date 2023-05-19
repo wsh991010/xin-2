@@ -1,0 +1,146 @@
+html {scroll-behavior: smooth;}
+
+@media (max-width: 600px) {
+    .w3-row {
+      flex-wrap: wrap;
+    }
+
+    .w3-col {
+      width: 100% !important;
+    }
+  }
+
+body {
+    font: size 90px;
+    color: aliceblue;
+    letter-spacing: 0.5px;      
+    
+    background-repeat: no-repeat!important; 
+    
+
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif" !important;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* 半透明黑色背景 */
+    z-index: -1; /* 將覆蓋層放在最底層 */
+  }
+
+
+  
+
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* 定義動畫效果 */
+  @keyframes slideshow {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  /* 設定幻燈片切換效果 */
+  .mySlides {
+    animation: slideshow 5s infinite;
+    object-fit: contain!important;
+    object-fit: cover!important;
+  }
+  
+
+.mySlides{
+    width: 100vw !important;
+    height:90vh !important;  
+    background-repeat: no-repeat !important;
+    background-size: 100vw !important;
+    background-position: top center !important;   
+}
+
+.custom-font {
+    font-family: "Times New Roman", sans-serif; /* 在這裡指定你想要使用的字體 */
+  }
+
+.custom-heading {
+    font-size: 12px!important; /* 設定文字大小為 18 像素 */
+    font-family: "Arial", sans-serif!important; /* 設定字體為 Arial 或後備字體 */
+  }
+
+  .custom-letter-spacing {
+    font-size: 12px!important;
+    letter-spacing: 2px!important; /* 調整字距，可以根據需要進行調整 */
+    font-style: italic!important; /* 設定斜體 */
+  }
+ 
+
+  .image-hover {
+    transition: opacity 0.3s;
+    opacity: 0.4; /* 初始时设置为半透明 */
+  }
+  
+  .w3-display-container:hover .image-hover {
+    opacity: 1; /* 鼠标悬停时设置为不透明 */
+  }
+  
+  .w3-display-container:hover .w3-hide {
+    display: block;
+    
+  }
+  
+  .custom-text {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    right: 50px;
+    padding: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    
+  }
+
+  
+  
+
+  /* 參展攝影師頭像框為圓形，以及有外框線。 */
+.artist-portrait {
+    margin: 0 auto;
+    width:130px; 
+    height:130px; 
+    border:4px double #777; 
+    border-radius:50%;  
+}
+/* 參展攝影師中文姓名，文字置中。 */
+p.name {
+    text-align:center;
+}
+/* 參展攝影師英文姓名，文字置中。字級大小略小一點。 */
+p.name-en {
+    text-align:center;
+    font-size:90%;
+}
+
+
+.fade-transition {
+    opacity: 1;
+    transition: opacity 2s;
+  }
+
+  .fade-transition.fade-out {
+    opacity: 0;
+  }
+  
